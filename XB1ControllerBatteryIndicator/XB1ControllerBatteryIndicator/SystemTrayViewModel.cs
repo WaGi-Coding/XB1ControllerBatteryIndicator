@@ -88,7 +88,7 @@ namespace XB1ControllerBatteryIndicator
                             //"disconnected", a controller that was detected but hasn't sent battery data yet has this state
                             else if (batteryInfo.BatteryType == BatteryType.Disconnected)
                             {
-                                TooltipText = $"Controller {CurrentController.UserIndex} - Found but still waiting for battery data...";
+                                TooltipText = $"Controller {CurrentController.UserIndex} - Found but no data - Please press a Button";
                                 ActiveIcon = $"Resources/battery_disconnected_{CurrentController.UserIndex.ToString().ToLower()}.ico";
                             }
                             //this state should never happen
